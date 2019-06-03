@@ -32,4 +32,13 @@ public class MatcherTest {
         assertThat(matcher.matches("arg")).isFalse();
     }
 
+    @Test
+    public void testWildCard() {
+        Matcher matcher = new Matcher("foo.*");
+        assertThat(matcher.matches("foo")).isTrue();
+        assertThat(matcher.matches("foo[][][[]f90e")).isTrue();
+        assertThat(matcher.matches("fo")).isFalse();
+        assertThat(matcher.matches("")).isFalse();
+    }
+
 }

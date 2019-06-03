@@ -12,9 +12,6 @@ public abstract class State {
 
     public abstract Action accept(char c);
 
-    public void reset() {
-    }
-
     public boolean satisfied() {
         return false;
     }

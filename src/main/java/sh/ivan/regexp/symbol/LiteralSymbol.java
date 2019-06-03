@@ -1,6 +1,6 @@
 package sh.ivan.regexp.symbol;
 
-public class LiteralSymbol extends Symbol {
+public class LiteralSymbol implements Symbol {
     private final char value;
 
     public LiteralSymbol(char value) {

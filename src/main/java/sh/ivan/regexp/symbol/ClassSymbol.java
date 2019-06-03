@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ClassSymbol extends Symbol {
+public class ClassSymbol implements Symbol {
     private final Set<Character> values;
 
     public ClassSymbol(Character[] values) {
